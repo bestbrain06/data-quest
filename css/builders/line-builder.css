@@ -1,0 +1,127 @@
+/* =====================================
+   LINE BUILDER SPECIFIC STYLES
+===================================== */
+
+/* =====================================
+   LINE CHART HEADER
+===================================== */
+
+.builder-header h1 {
+  background: linear-gradient(90deg, var(--primary-color), #16a34a);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+
+/* =====================================
+   LINE CHART PANEL
+===================================== */
+
+.chart-panel {
+  min-height: 520px;
+}
+
+.canvas-container {
+  height: 420px;
+
+  position: relative;
+
+  padding: 20px;
+}
+
+/* =====================================
+   LINE DATA INPUTS
+===================================== */
+
+.data-row {
+  grid-template-columns: 1fr 120px 45px;
+}
+
+/* =====================================
+   TREND CARD
+===================================== */
+
+#trend {
+  font-size: 1.1rem;
+
+  text-transform: capitalize;
+}
+
+/* =====================================
+   CHANGE DISPLAY
+===================================== */
+
+#change {
+  color: #16a34a;
+}
+
+/* =====================================
+   LEARNING MESSAGE
+===================================== */
+
+.learning-message {
+  margin-top: 35px;
+
+  background: #f0fdf4;
+
+  border-left-color: #16a34a;
+}
+
+.learning-message p {
+  color: #334155;
+}
+
+/* =====================================
+   CHALLENGE SECTION
+===================================== */
+
+.challenge-section {
+  padding: 70px 0;
+
+  background: #f8fafc;
+}
+
+.challenge-section h2 {
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+.challenge-section > .container > p {
+  text-align: center;
+
+  color: var(--text-muted);
+}
+
+#challengeContainer {
+  margin-top: 35px;
+}
+
+.challenge-card {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  border: 1px solid var(--border-color);
+
+  line-height: 1.7;
+}
+
+/* =====================================
+   LINE CHART RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+  .canvas-container {
+    height: 320px;
+
+    padding: 10px;
+  }
+
+  .data-row {
+    grid-template-columns: 1fr;
+  }
+}

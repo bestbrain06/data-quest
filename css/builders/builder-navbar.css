@@ -1,0 +1,313 @@
+/* =========================================
+   BUILDER NAVBAR
+========================================= */
+
+.builder-header-nav {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid var(--border-color);
+
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.05);
+}
+
+.builder-navbar {
+  height: 82px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.builder-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+}
+
+.logo-text h2 {
+  color: var(--primary-color);
+
+  font-size: 1.45rem;
+
+  margin: 0;
+}
+
+.logo-text span {
+  display: block;
+
+  font-size: 0.8rem;
+
+  color: var(--muted-text);
+}
+
+/* =========================================
+   MENU
+========================================= */
+
+.builder-nav-menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 40px;
+}
+
+.builder-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.builder-back {
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: #eef4ff;
+
+  color: var(--primary-color);
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.builder-back:hover {
+  background: var(--primary-color);
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.builder-links a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 18px;
+
+  border-radius: 999px;
+
+  color: var(--text-color);
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.builder-links a:hover {
+  background: #eef4ff;
+
+  color: var(--primary-color);
+}
+
+.builder-links a.active {
+  background: linear-gradient(135deg, var(--primary-color), #4f46e5);
+
+  color: white;
+
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+/* =========================================
+   MOBILE BUTTON
+========================================= */
+
+.builder-menu-toggle {
+  display: none;
+
+  width: 48px;
+
+  height: 48px;
+
+  border: none;
+
+  background: #f8fafc;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.builder-menu-toggle span {
+  position: absolute;
+
+  left: 12px;
+
+  width: 24px;
+
+  height: 3px;
+
+  border-radius: 20px;
+
+  background: #1e293b;
+
+  transition: 0.35s;
+}
+
+.builder-menu-toggle span:nth-child(1) {
+  top: 15px;
+}
+
+.builder-menu-toggle span:nth-child(2) {
+  top: 22px;
+}
+
+.builder-menu-toggle span:nth-child(3) {
+  top: 29px;
+}
+
+/* =========================================
+   HAMBURGER ANIMATION
+========================================= */
+
+.builder-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg);
+
+  top: 22px;
+}
+
+.builder-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.builder-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg);
+
+  top: 22px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+  .builder-menu-toggle {
+    display: block;
+  }
+
+  .builder-nav-menu {
+    position: absolute;
+
+    top: 82px;
+
+    left: 0;
+
+    right: 0;
+
+    background: white;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    border-bottom: 1px solid var(--border-color);
+
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+
+    /* animation */
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateY(-20px);
+
+    transition: 0.35s;
+  }
+
+  .builder-nav-menu.active {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateY(0);
+  }
+
+  .builder-links {
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .builder-links li {
+    width: 100%;
+  }
+
+  .builder-links a {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .builder-back {
+    justify-content: center;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .builder-navbar {
+    height: 72px;
+  }
+
+  .logo-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .logo-text span {
+    font-size: 0.7rem;
+  }
+
+  .builder-nav-menu {
+    top: 72px;
+
+    padding: 20px;
+  }
+}

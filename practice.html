@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Practice statistics questions and improve your understanding of data representation."
+    />
+
+    <title>DataQuest | Statistics Practice</title>
+
+    <!-- GLOBAL STYLES -->
+
+    <link rel="stylesheet" href="css/variables.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- PAGE STYLE -->
+
+    <link rel="stylesheet" href="css/practice.css" />
+
+    <link rel="stylesheet" href="css/components/next-journey.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ==========================
+            NAVBAR
+    =========================== -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <h2>DataQuest</h2>
+
+            <span> Statistics Learning Platform </span>
+          </a>
+
+          <button class="menu-toggle">
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+          </button>
+
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+
+              <li>
+                <a href="lesson.html"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html" class="active"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==========================
+              HERO SECTION
+      =========================== -->
+
+      <section class="practice-hero">
+        <div class="container">
+          <div class="practice-hero-content">
+            <span class="lesson-label">
+              SHS 2 Mathematics • Statistics Practice
+            </span>
+
+            <h1>Test Your Statistics Knowledge</h1>
+
+            <p>
+              Practice different statistics concepts from types of data,
+              frequency tables, charts and data interpretation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+            PRACTICE AREA
+      =========================== -->
+
+      <section class="practice-section">
+        <div class="container">
+          <!-- PROGRESS -->
+
+          <div class="practice-progress">
+            <div class="progress-header">
+              <h3>Statistics Practice</h3>
+
+              <span id="questionCounter"> Question 1 of 10 </span>
+            </div>
+
+            <div class="progress-bar">
+              <div id="progressFill"></div>
+            </div>
+
+            <p>
+              Score:
+              <strong id="score"> 0 </strong>
+            </p>
+          </div>
+
+          <!-- QUESTION CARD -->
+
+          <div class="question-card">
+            <h2 id="questionText">Question will appear here</h2>
+
+            <!-- ANSWER AREA -->
+
+            <div id="answerContainer"></div>
+
+            <!-- HINT -->
+
+            <button id="hintButton" class="hint-button">💡 Show Hint</button>
+
+            <div id="hintBox" class="hint-box hidden">
+              Hint will appear here.
+            </div>
+
+            <!-- ACTION BUTTONS -->
+
+            <div class="question-actions">
+              <button id="submitAnswer" class="primary-action">
+                Submit Answer
+              </button>
+
+              <button id="nextQuestion" class="secondary-action hidden">
+                Next Question →
+              </button>
+            </div>
+
+            <!-- FEEDBACK -->
+
+            <div id="feedbackBox" class="feedback-box hidden">
+              <h3 id="feedbackTitle"></h3>
+
+              <p id="feedbackMessage"></p>
+
+              <button id="explanationButton" class="explanation-button">
+                Show Explanation
+              </button>
+
+              <div id="explanationBox" class="explanation-box hidden"></div>
+            </div>
+          </div>
+
+          <!-- RESET -->
+
+          <div class="practice-reset">
+            <button id="resetPractice">Reset Practice Progress</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     NEXT STEP SECTION
+========================= -->
+
+      <section class="next-section">
+        <div class="container">
+          <div class="next-card">
+            <!-- CONTENT SIDE -->
+
+            <div class="next-content">
+              <span class="next-label"> Final Preparation </span>
+
+              <h2>Ready to Test Your Statistics Skills?</h2>
+
+              <p>
+                Excellent work! You have completed your practice activities. You
+                have reviewed different statistics concepts, received feedback,
+                and improved your understanding. The next step is to take the
+                assessment and demonstrate what you have learned.
+              </p>
+
+              <!-- PRACTICE SUMMARY -->
+
+              <div class="achievement-list">
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Practiced different statistics concepts</p>
+                </div>
+
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Checked answers and received feedback</p>
+                </div>
+
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Reviewed explanations for mistakes</p>
+                </div>
+
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Prepared for the final assessment</p>
+                </div>
+              </div>
+
+              <a href="assessment.html" class="next-button">
+                Continue to Assessment →
+              </a>
+            </div>
+
+            <!-- PROGRESS SIDE -->
+
+            <div class="next-progress">
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Lesson</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Interactive</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Practice</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item active">
+                <span> 04 </span>
+
+                <p>Assessment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================
+              FOOTER
+    =========================== -->
+
+    <!-- =========================
+        FOOTER
+========================= -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>DataQuest</h3>
+
+            <p>
+              An interactive mathematics learning platform designed for SHS 2
+              students.
+            </p>
+          </div>
+
+          <div class="footer-course">
+            <h4>Course</h4>
+
+            <ul>
+              <li>ICTD 361</li>
+
+              <li>Statistics</li>
+
+              <li>Data Collection and Representation</li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Learning Path</h4>
+
+            <ul>
+              <li>
+                <a href="lesson.html"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 DataWise Classroom. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/navbar.js"></script>
+
+    <script src="js/practice.js"></script>
+  </body>
+</html>

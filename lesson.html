@@ -1,0 +1,2199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="An interactive SHS statistics lesson on collecting and representing data using tables and graphs."
+    />
+
+    <title>DataQuest | Collecting and Representing Data</title>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Lesson CSS -->
+    <link rel="stylesheet" href="css/lesson.css" />
+    <link rel="stylesheet" href="css/components/next-journey.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- Lesson Reading Progress -->
+    <div class="lesson-progress-container">
+      <div class="lesson-progress-text">
+        Lesson Progress:
+        <span id="progressPercentage">0%</span>
+      </div>
+
+      <div class="lesson-progress-bar">
+        <div class="lesson-progress-fill" id="progressFill"></div>
+      </div>
+    </div>
+
+    <!-- ==========================
+        NAVIGATION
+=========================== -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <h2>DataQuest</h2>
+
+            <span> Statistics Learning Platform </span>
+          </a>
+
+          <button class="menu-toggle">
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+          </button>
+
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+
+              <li>
+                <a href="lesson.html" class="active"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ==========================
+        LESSON HERO
+=========================== -->
+
+      <section class="lesson-hero">
+        <div class="container">
+          <div class="lesson-hero-grid">
+            <div class="lesson-hero-content">
+              <span class="lesson-label"> SHS 2 Mathematics • Statistics </span>
+
+              <h1>Collecting and Representing Data</h1>
+
+              <p>
+                Statistics begins with collecting information. In this lesson,
+                you will learn how data is collected, organised into tables and
+                represented using different graphs.
+              </p>
+
+              <div class="lesson-meta">
+                <div>
+                  <strong>Topic</strong>
+                  <span>Statistics</span>
+                </div>
+
+                <div>
+                  <strong>Level</strong>
+                  <span>SHS 2</span>
+                </div>
+
+                <div>
+                  <strong>Duration</strong>
+                  <span>45 Minutes</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="lesson-visual">
+              <div class="chart-preview">
+                <div class="bar bar-one"></div>
+
+                <div class="bar bar-two"></div>
+
+                <div class="bar bar-three"></div>
+
+                <div class="bar bar-four"></div>
+              </div>
+
+              <div class="visual-text">
+                <h3>Learn Data Visually</h3>
+
+                <p>Tables, charts and graphs help us understand information.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        INTRODUCTION
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Introduction to Statistics</h2>
+
+          <p>
+            Statistics is the branch of mathematics that deals with collecting,
+            organising, presenting, analysing and interpreting data to make
+            meaningful decisions.
+          </p>
+
+          <div class="concept-card">
+            <h3>Why Do We Need Statistics?</h3>
+
+            <p>
+              Imagine a school wants to know the most preferred sport among
+              students. Instead of guessing, the school can collect information
+              from students and use statistics to understand the results.
+            </p>
+
+            <div class="example-highlight">
+              <strong> Real-life Question: </strong>
+
+              <br /><br />
+
+              "What sport do students in SHS 2A enjoy the most?"
+            </div>
+
+            <p>
+              To answer this question, information must first be collected. This
+              information is called <strong>data</strong>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        WHAT IS DATA
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>What is Data?</h2>
+
+          <p>
+            Data refers to facts, figures, measurements or observations
+            collected for a specific purpose. In statistics, data provides the
+            information needed for analysis and decision making.
+          </p>
+
+          <div class="example-box">
+            <h3>Classroom Example: Collecting Data</h3>
+
+            <p>A teacher asks 20 students:</p>
+
+            <div class="question-box">"What is your favourite sport?"</div>
+
+            <p>The students provide the following responses:</p>
+
+            <div class="raw-data">
+              Football, Basketball, Football, Athletics, Football,
+
+              <br />
+
+              Basketball, Football, Volleyball, Football, Athletics,
+
+              <br />
+
+              Football, Basketball, Football, Athletics, Football,
+
+              <br />
+
+              Volleyball, Football, Basketball, Football, Athletics
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        RAW DATA
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Understanding Raw Data</h2>
+
+          <p>
+            The information collected directly from a source before arranging or
+            analysing it is called <strong>raw data</strong>.
+          </p>
+
+          <div class="concept-grid">
+            <div class="concept-card">
+              <h3>Raw Data Example</h3>
+
+              <p>The sports responses collected from students are:</p>
+
+              <div class="raw-data large">
+                Football
+
+                <br />
+
+                Basketball
+
+                <br />
+
+                Football
+
+                <br />
+
+                Athletics
+
+                <br />
+
+                Football
+
+                <br />
+
+                Basketball
+
+                <br />
+
+                Football
+
+                <br />
+
+                Volleyball
+              </div>
+            </div>
+
+            <div class="concept-card">
+              <h3>Why Organise Raw Data?</h3>
+
+              <p>
+                Raw data can be difficult to understand because similar
+                information is mixed together.
+              </p>
+
+              <p>
+                Statistics helps us organise this information so that patterns
+                become easier to see.
+              </p>
+
+              <div class="process-box">
+                Raw Data
+
+                <br />
+
+                ↓
+
+                <br />
+
+                Organised Data
+
+                <br />
+
+                ↓
+
+                <br />
+
+                Tables and Graphs
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        TYPES OF DATA
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Types of Data</h2>
+
+          <p>
+            Data can be classified into different types depending on the kind of
+            information collected. The two main types of data are qualitative
+            and quantitative data.
+          </p>
+
+          <div class="data-grid">
+            <div class="data-card">
+              <h3>Qualitative Data</h3>
+
+              <p>
+                Qualitative data describes qualities, characteristics or
+                categories. It tells us about the nature of something rather
+                than its numerical value.
+              </p>
+
+              <div class="example-highlight">
+                <strong> Examples: </strong>
+
+                <br /><br />
+
+                Favourite subject
+
+                <br />
+
+                Type of music preferred
+
+                <br />
+
+                Colour of a car
+
+                <br />
+
+                Gender of students
+              </div>
+
+              <div class="worked-example">
+                <h4>Worked Example</h4>
+
+                <p>Classify the following data:</p>
+
+                <p>Favourite football team of students</p>
+
+                <p class="solution">
+                  Answer: Qualitative data.
+
+                  <br />
+
+                  Reason: The responses are categories and not numerical
+                  measurements.
+                </p>
+              </div>
+            </div>
+
+            <div class="data-card">
+              <h3>Quantitative Data</h3>
+
+              <p>
+                Quantitative data represents information that can be counted or
+                measured. It is expressed using numbers.
+              </p>
+
+              <div class="example-highlight">
+                <strong> Examples: </strong>
+
+                <br /><br />
+
+                Number of siblings
+
+                <br />
+
+                Students' examination scores
+
+                <br />
+
+                Height of learners
+
+                <br />
+
+                Number of books read
+              </div>
+
+              <div class="worked-example">
+                <h4>Worked Example</h4>
+
+                <p>Classify the following data:</p>
+
+                <p>Number of students in a classroom</p>
+
+                <p class="solution">
+                  Answer: Quantitative data.
+
+                  <br />
+
+                  Reason: The information is represented using numbers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        DATA COLLECTION METHODS
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Methods of Collecting Data</h2>
+
+          <p>
+            Data collection is the process of gathering information from
+            different sources. The method chosen depends on the type of
+            information needed.
+          </p>
+
+          <div class="method-grid">
+            <div class="method-card">
+              <h3>Questionnaire</h3>
+
+              <p>
+                A questionnaire collects information by asking people a series
+                of written questions.
+              </p>
+
+              <div class="example-highlight">
+                <strong> Example: </strong>
+
+                <br /><br />
+
+                A school wants to know students' favourite subjects, so learners
+                complete a short survey form.
+              </div>
+            </div>
+
+            <div class="method-card">
+              <h3>Interview</h3>
+
+              <p>
+                An interview collects information by asking questions directly
+                and recording the responses.
+              </p>
+
+              <div class="example-highlight">
+                <strong> Example: </strong>
+
+                <br /><br />
+
+                A researcher asks students about their study habits and records
+                their answers.
+              </div>
+            </div>
+
+            <div class="method-card">
+              <h3>Observation</h3>
+
+              <p>
+                Observation involves watching an event and recording what
+                happens.
+              </p>
+
+              <div class="example-highlight">
+                <strong> Example: </strong>
+
+                <br /><br />
+
+                A teacher counts how many students arrive late to school each
+                day.
+              </div>
+            </div>
+
+            <div class="method-card">
+              <h3>Experiment</h3>
+
+              <p>
+                An experiment collects data by carrying out a controlled test or
+                measurement.
+              </p>
+
+              <div class="example-highlight">
+                <strong> Example: </strong>
+
+                <br /><br />
+
+                Measuring plant growth under different amounts of sunlight.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        CLASSROOM DATA ACTIVITY
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Classroom Data Collection Activity</h2>
+
+          <p>
+            A teacher wants to know the favourite sports of students in SHS 2A.
+            The teacher uses a questionnaire to collect responses.
+          </p>
+
+          <div class="example-box">
+            <h3>Collected Responses</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Student</th>
+
+                  <th>Favourite Sport</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Ama</td>
+
+                  <td>Football</td>
+                </tr>
+
+                <tr>
+                  <td>Kojo</td>
+
+                  <td>Basketball</td>
+                </tr>
+
+                <tr>
+                  <td>Yaw</td>
+
+                  <td>Football</td>
+                </tr>
+
+                <tr>
+                  <td>Adwoa</td>
+
+                  <td>Athletics</td>
+                </tr>
+
+                <tr>
+                  <td>Kofi</td>
+
+                  <td>Football</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="worked-example">
+            <h3>Understanding The Data</h3>
+
+            <p>From the table above:</p>
+
+            <ul>
+              <li>
+                The information collected is the students' favourite sports.
+              </li>
+
+              <li>
+                The data type is qualitative because sports are categories.
+              </li>
+
+              <li>The method used is questionnaire.</li>
+
+              <li>
+                The responses are raw data because they have not been counted or
+                organised.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        ORGANISING RAW DATA
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Organising Raw Data</h2>
+
+          <p>
+            After collecting data, the information is usually scattered and
+            difficult to interpret. We organise the data by grouping similar
+            values together and counting how often each value occurs.
+          </p>
+
+          <div class="example-box">
+            <h3>Example: Number of Siblings of Students</h3>
+
+            <p>
+              A teacher asked 20 students how many siblings they have. The
+              responses collected were:
+            </p>
+
+            <div class="raw-data large">
+              2, 1, 3, 2, 4,
+
+              <br />
+
+              2, 5, 1, 3, 2,
+
+              <br />
+
+              4, 2, 3, 1, 2,
+
+              <br />
+
+              3, 4, 2, 5, 3
+            </div>
+
+            <p>
+              This information is called <strong>raw data</strong> because it
+              has not been organised.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        ARRANGING DATA
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Arranging Data in Order</h2>
+
+          <p>
+            The first step in organising raw data is arranging the values from
+            the smallest number to the largest number. This makes counting
+            easier.
+          </p>
+
+          <div class="worked-example">
+            <h3>Step 1: Arrange the Data</h3>
+
+            <p>Original data:</p>
+
+            <div class="raw-data">
+              2, 1, 3, 2, 4, 2, 5, 1, 3, 2,
+
+              <br />
+
+              4, 2, 3, 1, 2, 3, 4, 2, 5, 3
+            </div>
+
+            <p>Arrange from the smallest value:</p>
+
+            <div class="ordered-data">
+              1, 1, 1,
+
+              <br /><br />
+
+              2, 2, 2, 2, 2, 2,
+
+              <br /><br />
+
+              3, 3, 3, 3,
+
+              <br /><br />
+
+              4, 4, 4,
+
+              <br /><br />
+
+              5, 5
+            </div>
+
+            <div class="solution">
+              <strong> Observation: </strong>
+
+              <br />
+
+              The arranged data allows us to easily count how many times each
+              number appears.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        FREQUENCY
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Understanding Frequency</h2>
+
+          <p>
+            Frequency is the number of times a particular value appears in a
+            dataset.
+          </p>
+
+          <div class="worked-example">
+            <h3>Counting Frequency</h3>
+
+            <p>From the arranged data:</p>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Number of Siblings</th>
+
+                  <th>Counting</th>
+
+                  <th>Frequency</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+
+                  <td>1,1,1</td>
+
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+
+                  <td>2,2,2,2,2,2</td>
+
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+
+                  <td>3,3,3,3</td>
+
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+
+                  <td>4,4,4</td>
+
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+
+                  <td>5,5</td>
+
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="solution">
+              The total frequency is:
+
+              <br /><br />
+
+              3 + 6 + 4 + 3 + 2 = <strong>18</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        TALLY MARKS
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Using Tally Marks</h2>
+
+          <p>
+            Tally marks are a quick counting system used when recording
+            frequencies. They help prevent mistakes when counting large amounts
+            of data.
+          </p>
+
+          <div class="concept-card">
+            <h3>Tally Rule</h3>
+
+            <p>
+              The first four observations are represented by four vertical
+              lines. The fifth observation crosses the first four to create a
+              group of five.
+            </p>
+
+            <div class="tally-display">||||/ = 5</div>
+          </div>
+
+          <div class="example-box">
+            <h3>Creating a Tally Frequency Table</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Number of Siblings</th>
+
+                  <th>Tally</th>
+
+                  <th>Frequency</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+
+                  <td>|||</td>
+
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+
+                  <td>||||/ |</td>
+
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+
+                  <td>||||</td>
+
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+
+                  <td>|||</td>
+
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+
+                  <td>||</td>
+
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        FREQUENCY TABLE
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Frequency Distribution Table</h2>
+
+          <p>
+            After counting the data, we can present it in a frequency
+            distribution table. This table shows each value and how often it
+            occurs.
+          </p>
+
+          <div class="example-box">
+            <h3>Final Frequency Distribution Table</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Number of Siblings</th>
+
+                  <th>Frequency</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>1</td>
+
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>2</td>
+
+                  <td>6</td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+
+                  <td>4</td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+
+                  <td>3</td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+
+                  <td>2</td>
+                </tr>
+
+                <tr>
+                  <th>Total</th>
+
+                  <th>18</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="concept-card">
+            <h3>Why Frequency Tables Are Important</h3>
+
+            <ul>
+              <li>They simplify large amounts of data.</li>
+
+              <li>They make comparison easier.</li>
+
+              <li>They help us create graphs and charts.</li>
+
+              <li>They help us identify patterns in data.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        REPRESENTING DATA
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Representing Data</h2>
+
+          <p>
+            After collecting and organising data, the next step is to present
+            the information in a clear form. This process is called
+            <strong>data representation</strong>. Data representation helps
+            people understand information quickly, identify patterns and make
+            decisions.
+          </p>
+
+          <div class="process-box">
+            Collected Data
+
+            <br />
+
+            ↓
+
+            <br />
+
+            Organised Data
+
+            <br />
+
+            ↓
+
+            <br />
+
+            Tables and Graphs
+
+            <br />
+
+            ↓
+
+            <br />
+
+            Meaningful Information
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        WHY REPRESENT DATA
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Why Do We Represent Data?</h2>
+
+          <div class="purpose-grid">
+            <div class="purpose-card">
+              <h3>Easy Understanding</h3>
+
+              <p>
+                Graphs and charts transform large amounts of information into a
+                form that is easy to read.
+              </p>
+            </div>
+
+            <div class="purpose-card">
+              <h3>Comparison</h3>
+
+              <p>
+                Representations allow us to compare different categories or
+                values quickly.
+              </p>
+            </div>
+
+            <div class="purpose-card">
+              <h3>Finding Patterns</h3>
+
+              <p>
+                Graphs help us identify increases, decreases and important
+                relationships in data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        TYPES OF REPRESENTATION
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Ways of Representing Data</h2>
+
+          <p>
+            Different types of data require different methods of representation.
+            The choice depends on the purpose of presenting the information.
+          </p>
+
+          <div class="representation-grid">
+            <div class="representation-card">
+              <h3>Bar Chart</h3>
+
+              <p>Used to compare quantities between different categories.</p>
+
+              <div class="example-highlight">
+                Example:
+
+                <br />
+
+                Favourite subjects of students
+              </div>
+            </div>
+
+            <div class="representation-card">
+              <h3>Pie Chart</h3>
+
+              <p>Used to show how a whole is divided into different parts.</p>
+
+              <div class="example-highlight">
+                Example:
+
+                <br />
+
+                Percentage of students in school clubs
+              </div>
+            </div>
+
+            <div class="representation-card">
+              <h3>Line Graph</h3>
+
+              <p>Used to show changes or trends over time.</p>
+
+              <div class="example-highlight">
+                Example:
+
+                <br />
+
+                Temperature recorded daily
+              </div>
+            </div>
+
+            <div class="representation-card">
+              <h3>Pictogram</h3>
+
+              <p>Uses pictures or symbols to represent quantities.</p>
+
+              <div class="example-highlight">
+                Example:
+
+                <br />
+
+                Number of books read by students
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        CHOOSING REPRESENTATION
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Choosing the Appropriate Representation</h2>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Question</th>
+
+                <th>Best Representation</th>
+
+                <th>Reason</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Compare different categories</td>
+
+                <td>Bar Chart</td>
+
+                <td>Bars make differences easy to see.</td>
+              </tr>
+
+              <tr>
+                <td>Show parts of a whole</td>
+
+                <td>Pie Chart</td>
+
+                <td>A circle shows how each part contributes to the whole.</td>
+              </tr>
+
+              <tr>
+                <td>Show changes over time</td>
+
+                <td>Line Graph</td>
+
+                <td>The connecting line shows movement and trends.</td>
+              </tr>
+
+              <tr>
+                <td>Represent quantities using symbols</td>
+
+                <td>Pictogram</td>
+
+                <td>Pictures make data attractive and simple.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ==========================
+        BAR CHART INTRODUCTION
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Bar Chart</h2>
+
+          <p>
+            A bar chart is a graphical representation of data using rectangular
+            bars. The length or height of each bar represents the frequency or
+            value of a category.
+          </p>
+
+          <div class="concept-card">
+            <h3>When Do We Use A Bar Chart?</h3>
+
+            <p>
+              A bar chart is suitable when we want to compare different groups
+              or categories.
+            </p>
+
+            <div class="example-highlight">
+              Examples:
+
+              <br /><br />
+
+              Favourite subjects of students
+
+              <br />
+
+              Number of cars sold by companies
+
+              <br />
+
+              Population of different towns
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        BAR CHART WORKED EXAMPLE
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Worked Example: Creating a Bar Chart</h2>
+
+          <p>
+            A teacher asked 50 students about their favourite subjects. The
+            results were recorded below.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Subject</th>
+
+                <th>Number of Students</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Mathematics</td>
+
+                <td>20</td>
+              </tr>
+
+              <tr>
+                <td>Science</td>
+
+                <td>15</td>
+              </tr>
+
+              <tr>
+                <td>English</td>
+
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td>ICT</td>
+
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="worked-example">
+            <h3>How To Draw The Bar Chart</h3>
+
+            <ol>
+              <li>Draw two perpendicular axes.</li>
+
+              <li>Label the horizontal axis with the categories (subjects).</li>
+
+              <li>
+                Label the vertical axis with frequency (number of students).
+              </li>
+
+              <li>
+                Choose a suitable scale. Example: 1 unit represents 5 students.
+              </li>
+
+              <li>Draw bars of equal width.</li>
+
+              <li>Make each bar reach the correct frequency value.</li>
+
+              <li>Give the chart a clear title.</li>
+            </ol>
+          </div>
+
+          <div class="chart-container">
+            <h3>Bar Chart Representation</h3>
+
+            <canvas id="barChart"></canvas>
+          </div>
+          <div class="worked-example">
+            <h3>Reading The Bar Chart</h3>
+
+            <p>
+              <strong> Question: </strong>
+
+              Which subject is the most preferred?
+            </p>
+
+            <p class="solution">
+              Answer: Mathematics is the most preferred subject because it has
+              the highest frequency (20 students).
+            </p>
+
+            <p>
+              <strong> Question: </strong>
+
+              How many more students prefer Mathematics than ICT?
+            </p>
+
+            <p class="solution">
+              Answer: 20 - 5 = 15
+
+              <br />
+
+              Therefore, 15 more students prefer Mathematics than ICT.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        PIE CHART
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Pie Chart</h2>
+
+          <p>
+            A pie chart represents data using sectors of a circle. Each sector
+            represents a part of the total data. The size of each sector depends
+            on the frequency of that category.
+          </p>
+
+          <div class="concept-card">
+            <h3>When Do We Use A Pie Chart?</h3>
+
+            <p>
+              A pie chart is useful when we want to show how different
+              categories contribute to a whole.
+            </p>
+
+            <div class="example-highlight">
+              Examples:
+
+              <br /><br />
+
+              Percentage of students choosing clubs
+
+              <br />
+
+              Family monthly expenses
+
+              <br />
+
+              Types of transport used by learners
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        PIE CHART EXAMPLE
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Worked Example: Creating A Pie Chart</h2>
+
+          <p>
+            A survey was conducted among 100 students to find their favourite
+            school activities. The results are shown below.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Activity</th>
+
+                <th>Frequency</th>
+
+                <th>Sector Angle</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Reading</td>
+
+                <td>40</td>
+
+                <td>144°</td>
+              </tr>
+
+              <tr>
+                <td>Sports</td>
+
+                <td>30</td>
+
+                <td>108°</td>
+              </tr>
+
+              <tr>
+                <td>Music</td>
+
+                <td>20</td>
+
+                <td>72°</td>
+              </tr>
+
+              <tr>
+                <td>Gaming</td>
+
+                <td>10</td>
+
+                <td>36°</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="worked-example">
+            <h3>Finding Sector Angles</h3>
+
+            <p>A complete circle contains:</p>
+
+            <p class="formula">360°</p>
+
+            <p>Therefore:</p>
+
+            <p class="formula">
+              Sector angle = (Frequency ÷ Total Frequency) × 360°
+            </p>
+
+            <h4>Example: Reading</h4>
+
+            <p>
+              Frequency of Reading = 40
+
+              <br />
+
+              Total students = 100
+            </p>
+
+            <p class="solution">
+              Sector angle
+
+              <br /><br />
+
+              = (40 ÷ 100) × 360°
+
+              <br /><br />
+
+              = 0.4 × 360°
+
+              <br /><br />
+
+              = 144°
+            </p>
+          </div>
+
+          <div class="pie-chart-container">
+            <h3>Pie Chart Representation</h3>
+
+            <canvas id="pieChart"></canvas>
+          </div>
+
+          <div class="worked-example">
+            <h3>Reading The Pie Chart</h3>
+
+            <p>
+              <strong> Question: </strong>
+
+              Which activity takes the largest portion of the circle?
+            </p>
+
+            <p class="solution">
+              Answer: Reading has the largest sector because it has the highest
+              frequency (40 students).
+            </p>
+
+            <p>
+              <strong> Question: </strong>
+
+              What fraction of students prefer gaming?
+            </p>
+
+            <p class="solution">
+              Answer: Gaming = 10 students
+
+              <br />
+
+              Total = 100 students
+
+              <br /><br />
+
+              Fraction = 10/100 = 1/10
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        LINE GRAPH
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Line Graph</h2>
+
+          <p>
+            A line graph shows changes in data over a period of time. It is
+            created by plotting points and joining them with straight lines.
+          </p>
+
+          <div class="concept-card">
+            <h3>When Do We Use A Line Graph?</h3>
+
+            <p>
+              Line graphs are used when the order of values over time is
+              important.
+            </p>
+
+            <div class="example-highlight">
+              Examples:
+
+              <br /><br />
+
+              Temperature changes
+
+              <br />
+
+              Population growth
+
+              <br />
+
+              Monthly sales
+
+              <br />
+
+              Rainfall measurements
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        LINE GRAPH EXAMPLE
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Worked Example: Drawing A Line Graph</h2>
+
+          <p>The temperature of a town was recorded for five days.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Day</th>
+
+                <th>Temperature (°C)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Monday</td>
+
+                <td>28</td>
+              </tr>
+
+              <tr>
+                <td>Tuesday</td>
+
+                <td>30</td>
+              </tr>
+
+              <tr>
+                <td>Wednesday</td>
+
+                <td>32</td>
+              </tr>
+
+              <tr>
+                <td>Thursday</td>
+
+                <td>31</td>
+              </tr>
+
+              <tr>
+                <td>Friday</td>
+
+                <td>29</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="worked-example">
+            <h3>Steps For Drawing A Line Graph</h3>
+
+            <ol>
+              <li>Draw two axes.</li>
+
+              <li>Label the horizontal axis with time.</li>
+
+              <li>Label the vertical axis with the measurement.</li>
+
+              <li>Choose a suitable scale.</li>
+
+              <li>Plot each value as a point.</li>
+
+              <li>Join the points using straight lines.</li>
+
+              <li>Add a title.</li>
+            </ol>
+          </div>
+
+          <div class="chart-container">
+            <h3>Temperature Trend</h3>
+
+            <canvas id="lineChart"></canvas>
+          </div>
+
+          <div class="worked-example">
+            <h3>Interpreting The Line Graph</h3>
+
+            <p>
+              <strong> Question: </strong>
+
+              On which day was the temperature highest?
+            </p>
+
+            <p class="solution">
+              Answer: Wednesday had the highest temperature because it recorded
+              32°C.
+            </p>
+
+            <p>
+              <strong> Question: </strong>
+
+              Between which days did the temperature decrease?
+            </p>
+
+            <p class="solution">
+              Answer: The temperature decreased from Wednesday to Thursday and
+              Thursday to Friday.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        PICTOGRAM
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Pictogram</h2>
+
+          <p>
+            A pictogram represents data using pictures or symbols. Each symbol
+            represents a fixed number of items. A key must always be provided to
+            explain the value of each symbol.
+          </p>
+
+          <div class="worked-example">
+            <h3>Example: Books Read By Students</h3>
+
+            <table>
+              <tr>
+                <th>Student</th>
+
+                <th>Books Read</th>
+              </tr>
+
+              <tr>
+                <td>Ama</td>
+
+                <td>15</td>
+              </tr>
+
+              <tr>
+                <td>Kojo</td>
+
+                <td>10</td>
+              </tr>
+
+              <tr>
+                <td>Yaw</td>
+
+                <td>20</td>
+              </tr>
+            </table>
+
+            <h3>Pictogram</h3>
+
+            <p>
+              Key:
+
+              <br />
+
+              📚 = 5 books
+            </p>
+
+            <p>Ama: 📚 📚 📚</p>
+
+            <p>Kojo: 📚 📚</p>
+
+            <p>Yaw: 📚 📚 📚 📚</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        CHOOSING REPRESENTATION
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Choosing The Appropriate Data Representation</h2>
+
+          <p>
+            Different graphs communicate different types of information.
+            Choosing the correct representation depends on the purpose of
+            presenting the data.
+          </p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Situation</th>
+
+                <th>Best Representation</th>
+
+                <th>Reason</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Comparing different categories</td>
+
+                <td>Bar Chart</td>
+
+                <td>The height of bars makes differences easy to compare.</td>
+              </tr>
+
+              <tr>
+                <td>Showing parts of a whole</td>
+
+                <td>Pie Chart</td>
+
+                <td>
+                  The circle shows how each category contributes to the total.
+                </td>
+              </tr>
+
+              <tr>
+                <td>Showing changes over time</td>
+
+                <td>Line Graph</td>
+
+                <td>The connecting line shows increases and decreases.</td>
+              </tr>
+
+              <tr>
+                <td>Using pictures to represent quantities</td>
+
+                <td>Pictogram</td>
+
+                <td>Symbols make information simple and attractive.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ==========================
+        COMPARISON ACTIVITY
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Worked Example: Selecting A Representation</h2>
+
+          <div class="worked-example">
+            <h3>Situation 1</h3>
+
+            <p>
+              A school wants to compare the number of students who choose
+              Mathematics, Science, English and ICT.
+            </p>
+
+            <p class="solution">
+              Answer:
+
+              <strong> Bar Chart </strong>
+
+              is the most suitable representation because we are comparing
+              different categories.
+            </p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Situation 2</h3>
+
+            <p>
+              A researcher wants to show how a student's monthly allowance is
+              divided into food, transport, books and entertainment.
+            </p>
+
+            <p class="solution">
+              Answer:
+
+              <strong> Pie Chart </strong>
+
+              is suitable because the information represents parts of a whole.
+            </p>
+          </div>
+
+          <div class="worked-example">
+            <h3>Situation 3</h3>
+
+            <p>
+              A weather station records temperature every day for one month.
+            </p>
+
+            <p class="solution">
+              Answer:
+
+              <strong> Line Graph </strong>
+
+              is suitable because the data shows changes over time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        COMMON MISTAKES
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Common Mistakes When Representing Data</h2>
+
+          <div class="mistake-grid">
+            <div class="mistake-card">
+              <h3>Wrong Graph Choice</h3>
+
+              <p>
+                Using a pie chart to show changes over time makes the
+                information difficult to understand.
+              </p>
+
+              <div class="correct-note">
+                Correct: Use a line graph for time-based changes.
+              </div>
+            </div>
+
+            <div class="mistake-card">
+              <h3>Missing Labels</h3>
+
+              <p>
+                Graphs without titles, axis labels or keys make interpretation
+                difficult.
+              </p>
+
+              <div class="correct-note">
+                Correct: Always include necessary labels and titles.
+              </div>
+            </div>
+
+            <div class="mistake-card">
+              <h3>Incorrect Scale</h3>
+
+              <p>
+                A wrong scale can make differences between values misleading.
+              </p>
+
+              <div class="correct-note">
+                Correct: Choose a suitable and consistent scale.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        FINAL DATA INTERPRETATION
+=========================== -->
+
+      <section class="lesson-section alternate">
+        <div class="container">
+          <h2>Interpreting Represented Data</h2>
+
+          <p>
+            The purpose of representing data is not only to draw graphs but also
+            to extract meaning from the information.
+          </p>
+
+          <div class="worked-example">
+            <h3>Example: Analysing A Frequency Table</h3>
+
+            <table>
+              <tr>
+                <th>Favourite Sport</th>
+
+                <th>Number of Students</th>
+              </tr>
+
+              <tr>
+                <td>Football</td>
+
+                <td>25</td>
+              </tr>
+
+              <tr>
+                <td>Basketball</td>
+
+                <td>15</td>
+              </tr>
+
+              <tr>
+                <td>Athletics</td>
+
+                <td>10</td>
+              </tr>
+            </table>
+
+            <h3>Interpretation</h3>
+
+            <p>
+              <strong> Question: </strong>
+
+              Which sport is the most popular?
+            </p>
+
+            <p class="solution">
+              Answer: Football is the most popular because it has the highest
+              frequency of 25 students.
+            </p>
+
+            <p>
+              <strong> Question: </strong>
+
+              How many more students prefer football than athletics?
+            </p>
+
+            <p class="solution">
+              Difference:
+
+              <br />
+
+              25 - 10 = 15
+
+              <br /><br />
+
+              Therefore, 15 more students prefer football than athletics.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+        LESSON SUMMARY
+=========================== -->
+
+      <section class="lesson-section">
+        <div class="container">
+          <h2>Lesson Summary</h2>
+
+          <div class="summary-flow">
+            <div>Collect Data</div>
+
+            ↓
+
+            <div>Organise Data</div>
+
+            ↓
+
+            <div>Create Tables</div>
+
+            ↓
+
+            <div>Represent Data</div>
+
+            ↓
+
+            <div>Interpret Results</div>
+          </div>
+
+          <div class="concept-card">
+            <h3>What You Have Learned</h3>
+
+            <ul>
+              <li>Data is information collected for a specific purpose.</li>
+
+              <li>
+                Data can be collected through questionnaires, interviews,
+                observation and experiments.
+              </li>
+
+              <li>
+                Raw data must be organised using tally marks and frequency
+                tables.
+              </li>
+
+              <li>Bar charts compare categories.</li>
+
+              <li>Pie charts show parts of a whole.</li>
+
+              <li>Line graphs show changes over time.</li>
+
+              <li>Pictograms represent quantities using symbols.</li>
+
+              <li>
+                The correct representation depends on the purpose of the data.
+              </li>
+            </ul>
+          </div>
+
+          <div class="final-message">
+            <h3>Statistics Is About Making Data Meaningful</h3>
+
+            <p>
+              Numbers alone do not tell a story. Statistics helps us collect
+              information, organise it, present it clearly and use it to make
+              informed decisions.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     NEXT LESSON SECTION
+========================= -->
+
+      <!-- =========================
+     LEARNING JOURNEY
+========================= -->
+
+      <section class="next-section">
+        <div class="container">
+          <div class="next-card">
+            <!-- CONTENT SIDE -->
+
+            <div class="next-content">
+              <span class="next-label"> Learning Journey </span>
+
+              <h2>Ready to Explore Statistics Interactively?</h2>
+
+              <p>
+                Great work! You have completed the lesson on data
+                representation. Before moving forward, review the key ideas you
+                have learned and apply them using the interactive laboratory.
+              </p>
+
+              <!-- SUMMARY -->
+
+              <div class="achievement-list">
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Identified different types of data</p>
+                </div>
+
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Organised data using frequency tables</p>
+                </div>
+
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Represented data using charts and graphs</p>
+                </div>
+
+                <div class="achievement-item">
+                  <span>✓</span>
+
+                  <p>Interpreted information from statistical displays</p>
+                </div>
+              </div>
+
+              <a href="interactive.html" class="next-button">
+                Continue to Interactive Learning →
+              </a>
+            </div>
+
+            <!-- PROGRESS SIDE -->
+
+            <div class="next-progress">
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Lesson</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item active">
+                <span> 02 </span>
+
+                <p>Interactive</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item">
+                <span> 03 </span>
+
+                <p>Practice</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item">
+                <span> 04 </span>
+
+                <p>Assessment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <!-- =========================
+        FOOTER
+========================= -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>DataQuest</h3>
+
+            <p>
+              An interactive mathematics learning platform designed for SHS 2
+              students.
+            </p>
+          </div>
+
+          <div class="footer-course">
+            <h4>Course</h4>
+
+            <ul>
+              <li>ICTD 361</li>
+
+              <li>Statistics</li>
+
+              <li>Data Collection and Representation</li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Learning Path</h4>
+
+            <ul>
+              <li>
+                <a href="lesson.html"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 DataWise Classroom. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/progress.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <script src="js/charts.js"></script>
+
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

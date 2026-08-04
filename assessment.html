@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Statistics assessment for SHS students."
+    />
+
+    <title>DataQuest | Statistics Assessment</title>
+
+    <!-- GLOBAL CSS -->
+
+    <link rel="stylesheet" href="css/variables.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- PAGE CSS -->
+
+    <link rel="stylesheet" href="css/assessment.css" />
+    <link rel="stylesheet" href="css/components/next-journey.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+        NAVBAR
+========================= -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <h2>DataQuest</h2>
+
+            <span> Statistics Learning Platform </span>
+          </a>
+
+          <button class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <div class="nav-menu">
+            <ul class="nav-links">
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+
+              <li>
+                <a href="lesson.html"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html" class="active"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================
+        HERO
+========================= -->
+
+      <section class="assessment-hero">
+        <div class="container">
+          <span class="lesson-label">
+            SHS 2 Mathematics • Statistics Assessment
+          </span>
+
+          <h1>Test Your Statistics Understanding</h1>
+
+          <p>
+            Evaluate your knowledge of data types, frequency tables, charts,
+            graphs and interpretation.
+          </p>
+        </div>
+      </section>
+
+      <!-- =========================
+        ASSESSMENT AREA
+========================= -->
+
+      <section class="assessment-section">
+        <div class="container">
+          <div class="assessment-info">
+            <div>
+              <h3>Statistics Assessment</h3>
+
+              <p>Answer all questions carefully before submitting.</p>
+            </div>
+
+            <div class="assessment-progress">
+              <span> Questions: </span>
+
+              <strong id="answeredCount"> 0 / 10 </strong>
+            </div>
+          </div>
+
+          <!-- QUESTIONS WILL LOAD HERE -->
+
+          <form id="assessmentForm"></form>
+
+          <button id="submitAssessment" class="submit-assessment">
+            Submit Assessment
+          </button>
+
+          <!-- RESULT AREA -->
+
+          <section id="resultSection" class="result-section hidden">
+            <h2>Assessment Result</h2>
+
+            <div class="score-card">
+              <p>Your Score</p>
+
+              <strong id="finalScore"> 0 / 10 </strong>
+            </div>
+
+            <div id="answerFeedback"></div>
+          </section>
+        </div>
+      </section>
+
+      <!-- =========================
+        NEXT STEP
+========================= -->
+
+      <section class="next-section">
+        <div class="container">
+          <div class="next-card">
+            <div class="next-content">
+              <span class="next-label"> Completion </span>
+
+              <h2>Great Work! Continue Your Mathematics Journey</h2>
+
+              <p>
+                You have completed the statistics assessment. Review your
+                answers and continue improving your mathematical skills.
+              </p>
+
+              <a href="index.html" class="next-button">
+                Return To Learning Home →
+              </a>
+            </div>
+
+            <div class="next-progress">
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Lesson</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Interactive</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Practice</p>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="progress-item completed">
+                <span> ✓ </span>
+
+                <p>Assessment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+        FOOTER
+========================= -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>DataQuest</h3>
+
+            <p>
+              An interactive mathematics learning platform designed for SHS 2
+              students.
+            </p>
+          </div>
+
+          <div class="footer-course">
+            <h4>Course</h4>
+
+            <ul>
+              <li>ICTD 361</li>
+
+              <li>Statistics</li>
+
+              <li>Data Collection and Representation</li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Learning Path</h4>
+
+            <ul>
+              <li>
+                <a href="lesson.html"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 DataWise Classroom. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+
+    <script src="js/assessment.js"></script>
+  </body>
+</html>

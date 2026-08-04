@@ -1,0 +1,295 @@
+/* =====================================================
+    DATAQUEST LEARNING JOURNEY COMPONENT
+===================================================== */
+
+/* =====================================================
+   MAIN SECTION
+===================================================== */
+
+.next-section {
+  padding: 90px 0;
+}
+
+.next-card {
+  display: grid;
+
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 50px;
+
+  align-items: center;
+
+  background: white;
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 32px;
+
+  padding: 50px;
+
+  box-shadow: var(--shadow-medium);
+}
+
+/* =====================================================
+   CONTENT SIDE
+===================================================== */
+
+.next-label {
+  display: inline-flex;
+
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(37, 99, 235, 0.1);
+
+  color: var(--primary-color);
+
+  font-size: 0.9rem;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+}
+
+.next-content h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+
+  line-height: 1.2;
+
+  margin-bottom: 20px;
+}
+
+.next-content p {
+  color: var(--muted-text);
+
+  line-height: 1.8;
+
+  margin-bottom: 30px;
+}
+
+/* =====================================================
+   ACHIEVEMENTS
+===================================================== */
+
+.achievement-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.achievement-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 14px;
+
+  border-radius: 14px;
+
+  background: #f8fafc;
+
+  border: 1px solid var(--border-color);
+}
+
+.achievement-item span {
+  width: 28px;
+
+  height: 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dcfce7;
+
+  color: #16a34a;
+
+  font-weight: 700;
+}
+
+.achievement-item p {
+  margin: 0;
+
+  color: var(--text-color);
+
+  font-size: 0.95rem;
+}
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.next-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 14px 30px;
+
+  border-radius: 14px;
+
+  background: var(--primary-color);
+
+  color: white;
+
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.next-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.25);
+}
+
+/* =====================================================
+   LEARNING PROGRESS
+===================================================== */
+
+.next-progress {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.progress-item {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.progress-item span {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e2e8f0;
+
+  color: #64748b;
+
+  font-weight: 700;
+
+  font-size: 1.1rem;
+}
+
+.progress-item.completed span {
+  background: #16a34a;
+
+  color: white;
+}
+
+.progress-item.active span {
+  background: var(--primary-color);
+
+  color: white;
+
+  box-shadow: 0 0 0 8px rgba(37, 99, 235, 0.15);
+}
+
+.progress-item p {
+  font-weight: 600;
+
+  color: var(--text-color);
+
+  margin: 0;
+}
+
+.line {
+  width: 3px;
+
+  height: 45px;
+
+  background: #cbd5e1;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+  .next-card {
+    grid-template-columns: 1fr;
+
+    padding: 35px;
+  }
+
+  .next-progress {
+    flex-direction: row;
+  }
+
+  .line {
+    width: 40px;
+
+    height: 3px;
+  }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+  .next-section {
+    padding: 60px 0;
+  }
+
+  .next-card {
+    padding: 25px;
+
+    border-radius: 22px;
+  }
+
+  .achievement-list {
+    grid-template-columns: 1fr;
+  }
+
+  .next-button {
+    width: 100%;
+  }
+
+  .next-progress {
+    flex-direction: column;
+  }
+
+  .line {
+    width: 3px;
+
+    height: 35px;
+  }
+
+  .progress-item span {
+    width: 48px;
+
+    height: 48px;
+  }
+}

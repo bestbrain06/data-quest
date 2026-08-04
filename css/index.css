@@ -1,0 +1,485 @@
+/* =====================================================
+   DATAWISE CLASSROOM
+   HOMEPAGE STYLES
+===================================================== */
+
+/* =====================================================
+   HERO SECTION
+===================================================== */
+
+.hero {
+  padding: 6rem 0;
+
+  overflow: hidden;
+
+  background: linear-gradient(135deg, #eff6ff, #ffffff);
+}
+
+.hero-wrapper {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 4rem;
+}
+
+.hero-content {
+  max-width: 620px;
+}
+
+.course-label {
+  display: inline-block;
+
+  background: #dbeafe;
+
+  color: var(--primary-color);
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 50px;
+
+  font-weight: 700;
+
+  font-size: 0.9rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+
+  line-height: 1.1;
+
+  margin-bottom: 1.5rem;
+}
+
+.hero-content h1 span {
+  color: var(--primary-color);
+}
+
+.hero-text {
+  color: var(--muted-text);
+
+  font-size: 1.15rem;
+
+  line-height: 1.8;
+
+  margin-bottom: 2rem;
+}
+
+/* LESSON INFORMATION */
+
+.lesson-info {
+  display: flex;
+
+  gap: 1rem;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 2rem;
+}
+
+.lesson-info div {
+  background: white;
+
+  border: 1px solid var(--border-color);
+
+  padding: 1rem 1.3rem;
+
+  border-radius: 16px;
+
+  box-shadow: var(--shadow-small);
+}
+
+.lesson-info strong {
+  display: block;
+
+  color: var(--primary-color);
+}
+
+.lesson-info p {
+  margin-top: 0.3rem;
+
+  color: var(--muted-text);
+}
+
+.hero-buttons {
+  display: flex;
+
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+/* =====================================================
+   DATA INVESTIGATION ILLUSTRATION
+===================================================== */
+
+.data-illustration {
+  position: relative;
+
+  height: 480px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.board {
+  width: 340px;
+
+  padding: 2rem;
+
+  background: white;
+
+  border-radius: 25px;
+
+  box-shadow: var(--shadow-medium);
+
+  border: 1px solid var(--border-color);
+
+  animation: float 5s ease-in-out infinite;
+}
+
+.board h3 {
+  text-align: center;
+
+  margin-bottom: 1.5rem;
+
+  color: var(--primary-color);
+}
+
+.mini-table {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0.8rem;
+}
+
+.mini-table span {
+  padding: 0.7rem;
+
+  background: #f1f5f9;
+
+  border-radius: 10px;
+
+  font-weight: 600;
+}
+
+.mini-table span:nth-child(even) {
+  text-align: center;
+
+  color: var(--secondary-color);
+}
+
+/* FLOATING OBJECTS */
+
+.floating-object {
+  position: absolute;
+
+  background: white;
+
+  padding: 1rem 1.5rem;
+
+  border-radius: 20px;
+
+  box-shadow: var(--shadow-medium);
+
+  text-align: center;
+
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating-object p {
+  margin-top: 0.5rem;
+
+  font-weight: 700;
+}
+
+.survey-card {
+  top: 70px;
+
+  left: 30px;
+}
+
+.chart-card {
+  right: 20px;
+
+  top: 160px;
+
+  animation-delay: 1s;
+}
+
+.question-card {
+  bottom: 80px;
+
+  left: 80px;
+
+  animation-delay: 2s;
+}
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.introduction {
+  padding: 6rem 0;
+}
+
+.intro-box {
+  max-width: 850px;
+
+  margin: auto;
+
+  text-align: center;
+
+  background: white;
+
+  padding: 3rem;
+
+  border-radius: 30px;
+
+  border: 1px solid var(--border-color);
+
+  box-shadow: var(--shadow-small);
+}
+
+.intro-box h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  margin-bottom: 1.5rem;
+}
+
+.intro-box p {
+  color: var(--muted-text);
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+}
+
+/* =====================================================
+   OVERVIEW CARDS
+===================================================== */
+
+.overview {
+  padding: 6rem 0;
+
+  background: #f8fafc;
+}
+
+.overview-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+.overview-card {
+  background: white;
+
+  padding: 2.5rem;
+
+  border-radius: 25px;
+
+  border: 1px solid var(--border-color);
+
+  transition: 0.4s ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: var(--shadow-medium);
+}
+
+.overview-card span {
+  display: flex;
+
+  width: 50px;
+
+  height: 50px;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #dbeafe;
+
+  color: var(--primary-color);
+
+  border-radius: 50%;
+
+  font-weight: 800;
+
+  margin-bottom: 1.5rem;
+}
+
+.overview-card h3 {
+  margin-bottom: 1rem;
+}
+
+.overview-card p {
+  color: var(--muted-text);
+
+  line-height: 1.7;
+}
+
+/* =====================================================
+   OBJECTIVES
+===================================================== */
+
+.objectives {
+  padding: 6rem 0;
+}
+
+.objective-list {
+  max-width: 800px;
+
+  margin: auto;
+
+  display: grid;
+
+  gap: 1rem;
+}
+
+.objective-list li {
+  background: white;
+
+  border-left: 5px solid var(--secondary-color);
+
+  padding: 1.3rem;
+
+  border-radius: 12px;
+
+  box-shadow: var(--shadow-small);
+
+  font-weight: 600;
+}
+
+/* =====================================================
+   TEACHING APPROACH
+===================================================== */
+
+.teaching {
+  padding: 6rem 0;
+}
+
+.teaching-box {
+  background: linear-gradient(135deg, #2563eb, #16a34a);
+
+  color: white;
+
+  padding: 3rem;
+
+  border-radius: 30px;
+
+  text-align: center;
+}
+
+.teaching-box h2 {
+  margin-bottom: 1rem;
+}
+
+.teaching-box p {
+  max-width: 800px;
+
+  margin: auto;
+
+  line-height: 1.8;
+}
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* =====================================================
+   RESPONSIVENESS
+===================================================== */
+
+@media (max-width: 1000px) {
+  .hero-wrapper {
+    grid-template-columns: 1fr;
+
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: auto;
+  }
+
+  .lesson-info {
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .data-illustration {
+    margin-top: 3rem;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .data-illustration {
+    height: 390px;
+  }
+
+  .board {
+    width: 280px;
+
+    padding: 1.5rem;
+  }
+
+  .survey-card {
+    left: 0;
+  }
+
+  .chart-card {
+    right: 0;
+  }
+
+  .question-card {
+    left: 20px;
+
+    bottom: 40px;
+  }
+
+  .intro-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .lesson-info {
+    flex-direction: column;
+  }
+}

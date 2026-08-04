@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DataQuest | Pie Chart Laboratory</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/builders/builder-navbar.css" />
+    <link rel="stylesheet" href="css/builders/builder-common.css" />
+    <link rel="stylesheet" href="css/builders/bar-builder.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- ==========================
+     BUILDER NAVBAR
+========================== -->
+
+    <header class="builder-header-nav">
+      <div class="container">
+        <nav class="builder-navbar">
+          <!-- Logo -->
+
+          <a href="index.html" class="builder-logo">
+            <div class="logo-text">
+              <h2>DataQuest</h2>
+
+              <span>Statistics Laboratory</span>
+            </div>
+          </a>
+
+          <!-- Mobile Menu Button -->
+
+          <button class="builder-menu-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- Navigation -->
+
+          <div class="builder-nav-menu">
+            <!-- Back -->
+
+            <a href="interactive.html" class="builder-back">
+              ← All Laboratories
+            </a>
+
+            <!-- Builder Links -->
+
+            <ul class="builder-links">
+              <li>
+                <a href="bar-builder.html"> 📊 Bar Chart </a>
+              </li>
+
+              <li>
+                <a href="pie-builder.html" class="active"> 🥧 Pie Chart </a>
+              </li>
+
+              <li>
+                <a href="line-builder.html"> 📈 Line Graph </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pie-builder-theme">
+      <!-- ==========================
+         HERO
+    =========================== -->
+
+      <section class="builder-header">
+        <div class="container">
+          <span class="lesson-label">
+            SHS 2 Mathematics • Statistics Laboratory
+          </span>
+
+          <h1>Pie Chart Builder</h1>
+
+          <p>
+            Learn how frequencies are converted into percentages, sector angles
+            and a complete pie chart.
+          </p>
+        </div>
+      </section>
+
+      <!-- ==========================
+         BUILDER
+    =========================== -->
+
+      <section class="builder-area">
+        <div class="container">
+          <div class="builder-grid">
+            <!-- LEFT PANEL -->
+
+            <aside class="data-panel">
+              <h2>Enter Your Data</h2>
+
+              <p class="panel-text">Enter categories and their frequencies.</p>
+
+              <div id="dataInputs">
+                <div class="data-row">
+                  <input
+                    type="text"
+                    placeholder="Category"
+                    class="category-input"
+                  />
+
+                  <input
+                    type="number"
+                    placeholder="Frequency"
+                    class="value-input"
+                  />
+                </div>
+              </div>
+
+              <div class="builder-actions">
+                <button id="addRow">+ Add Category</button>
+
+                <button id="resetChart" class="secondary-btn">Reset</button>
+              </div>
+            </aside>
+
+            <!-- RIGHT PANEL -->
+
+            <section class="chart-panel">
+              <h2>Live Pie Chart</h2>
+
+              <div class="chart-wrapper">
+                <canvas id="pieChart"></canvas>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+         CALCULATIONS
+    =========================== -->
+
+      <section class="calculation-section">
+        <div class="container">
+          <h2>Automatic Calculations</h2>
+
+          <p>
+            Every frequency is converted into a percentage and a sector angle.
+          </p>
+
+          <div class="table-wrapper">
+            <table id="calculationTable">
+              <thead>
+                <tr>
+                  <th>Category</th>
+
+                  <th>Frequency</th>
+
+                  <th>Percentage</th>
+
+                  <th>Angle</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <!-- JavaScript -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+         INTERPRETATION
+    =========================== -->
+
+      <section class="interpretation">
+        <div class="container">
+          <h2>Interpretation</h2>
+
+          <div class="analysis-grid">
+            <div class="analysis-card">
+              <h3>Total Frequency</h3>
+
+              <p id="totalFrequency">-</p>
+            </div>
+
+            <div class="analysis-card">
+              <h3>Largest Sector</h3>
+
+              <p id="largestSector">-</p>
+            </div>
+
+            <div class="analysis-card">
+              <h3>Smallest Sector</h3>
+
+              <p id="smallestSector">-</p>
+            </div>
+
+            <div class="analysis-card">
+              <h3>Largest Angle</h3>
+
+              <p id="largestAngle">-</p>
+            </div>
+          </div>
+
+          <div class="insight-box">
+            <h3>What Does This Tell Us?</h3>
+
+            <p id="pieInsight">Enter data to see an automatic explanation.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================
+         CHALLENGE
+    =========================== -->
+
+      <section class="challenge-section">
+        <div class="container">
+          <h2>Challenge Yourself</h2>
+
+          <p>Use your completed pie chart to answer the questions below.</p>
+
+          <div id="challengeContainer">
+            <div class="challenge-card">
+              Enter some data to generate your questions.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================
+       FOOTER
+  =========================== -->
+
+    <!-- =========================
+        FOOTER
+========================= -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>DataQuest</h3>
+
+            <p>
+              An interactive mathematics learning platform designed for SHS 2
+              students.
+            </p>
+          </div>
+
+          <div class="footer-course">
+            <h4>Course</h4>
+
+            <ul>
+              <li>ICTD 361</li>
+
+              <li>Statistics</li>
+
+              <li>Data Collection and Representation</li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>Learning Path</h4>
+
+            <ul>
+              <li>
+                <a href="lesson.html"> Lesson </a>
+              </li>
+
+              <li>
+                <a href="interactive.html"> Interactive </a>
+              </li>
+
+              <li>
+                <a href="practice.html"> Practice </a>
+              </li>
+
+              <li>
+                <a href="assessment.html"> Assessment </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 DataWise Classroom. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/builder-navbar.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/pie-builder.js"></script>
+  </body>
+</html>
