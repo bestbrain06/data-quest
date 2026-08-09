@@ -18,7 +18,7 @@ const questions = [
       "Number of students in a class",
       "Height of students",
       "Colour of a student's bag",
-      "Marks obtained in Mathematics",
+      "Number of books in a library",
     ],
 
     answer: "Colour of a student's bag",
@@ -26,178 +26,189 @@ const questions = [
     hint: "Qualitative data describes characteristics or categories.",
 
     explanation:
-      "Colour is a description and cannot be measured numerically, therefore it is qualitative data.",
+      "Colour describes a characteristic or category rather than a numerical quantity, so it is qualitative data.",
   },
 
   {
     id: 2,
 
-    topic: "Qualitative and Quantitative Data",
+    topic: "Data Collection Methods",
 
-    question: "Which of the following represents quantitative data?",
+    question:
+      "A teacher wants to find out the favourite subjects of students in a class. Which method would be most suitable for collecting this information?",
 
     options: [
-      "Favourite subject of students",
-      "Gender of students",
-      "Number of books owned by students",
-      "Colour of cars",
+      "Questionnaire",
+      "Experiment",
+      "Measuring students' heights",
+      "Drawing a pie chart",
     ],
 
-    answer: "Number of books owned by students",
+    answer: "Questionnaire",
 
-    hint: "Quantitative data involves numbers and measurements.",
+    hint: "Think about a method where students can provide their responses.",
 
     explanation:
-      "The number of books is numerical data, making it quantitative.",
+      "A questionnaire allows the teacher to ask students questions and collect their responses about their favourite subjects.",
   },
 
   {
     id: 3,
 
-    topic: "Discrete and Continuous Data",
+    topic: "Data Collection Methods",
 
-    question: "Which of the following is continuous data?",
+    question:
+      "A researcher watches students during break time and records the number of students who play different games. Which data collection method is being used?",
 
-    options: [
-      "Number of children in a family",
-      "Number of cars in a garage",
-      "Height of students",
-      "Number of classrooms",
-    ],
+    options: ["Interview", "Observation", "Questionnaire", "Experiment"],
 
-    answer: "Height of students",
+    answer: "Observation",
 
-    hint: "Continuous data can take any value within a range.",
+    hint: "The researcher is watching and recording what happens.",
 
     explanation:
-      "Height can be measured using decimals, such as 165.5 cm, so it is continuous data.",
+      "Observation involves watching events or behaviours and recording the information obtained.",
   },
 
   {
     id: 4,
 
-    topic: "Frequency Distribution",
+    topic: "Raw and Ordered Data",
 
     question:
-      "A table that shows how often each value occurs in a dataset is called:",
+      "Which of the following represents data that has been arranged from smallest to largest?",
 
     options: [
-      "Frequency distribution table",
-      "Pie chart",
-      "Histogram",
-      "Scatter plot",
+      "12, 5, 8, 3, 10",
+      "5, 3, 10, 12, 8",
+      "3, 5, 8, 10, 12",
+      "8, 12, 3, 5, 10",
     ],
 
-    answer: "Frequency distribution table",
+    answer: "3, 5, 8, 10, 12",
 
-    hint: "Think about counting occurrences.",
+    hint: "Ordered data is arranged according to a particular order.",
 
     explanation:
-      "A frequency distribution table organises data values and shows their frequencies.",
+      "The values 3, 5, 8, 10 and 12 are arranged from the smallest to the largest, so this is ordered data.",
   },
 
   {
     id: 5,
 
-    topic: "Mean",
+    topic: "Tally Tables",
 
-    question: "Find the mean of 4, 6, 8 and 10.",
+    question:
+      "What is the main purpose of using tally marks when collecting data?",
 
-    options: ["6", "7", "8", "9"],
+    options: [
+      "To draw a graph",
+      "To record and count occurrences quickly",
+      "To calculate the mean",
+      "To arrange data alphabetically",
+    ],
 
-    answer: "7",
+    answer: "To record and count occurrences quickly",
 
-    hint: "Add all values then divide by the number of values.",
+    hint: "Tally marks help you keep track of how many times something occurs.",
 
-    explanation: "Mean = (4 + 6 + 8 + 10) ÷ 4 = 28 ÷ 4 = 7.",
+    explanation:
+      "Tally marks provide a quick and organised way of recording the number of times each response or value occurs.",
   },
 
   {
     id: 6,
 
-    topic: "Median",
+    topic: "Frequency Distribution",
 
-    question: "What is the median of 3, 5, 7, 9 and 11?",
+    question:
+      "The table below records the favourite sports of students. What does the frequency of a category represent?",
 
-    options: ["5", "7", "9", "11"],
+    options: [
+      "The name of the category",
+      "The number of times the category occurs",
+      "The colour of the category",
+      "The order of the categories",
+    ],
 
-    answer: "7",
+    answer: "The number of times the category occurs",
 
-    hint: "Arrange data and find the middle value.",
+    hint: "Frequency tells us how often something occurs.",
 
-    explanation: "The numbers are already arranged. The middle value is 7.",
+    explanation:
+      "Frequency represents the number of times a particular value or category occurs in a dataset.",
   },
 
   {
     id: 7,
 
-    topic: "Mode",
+    topic: "Bar Charts",
 
-    question: "Find the mode of 2, 4, 4, 5, 6.",
+    question:
+      "Which type of graph is most suitable for comparing the number of students who chose different subjects?",
 
-    options: ["2", "4", "5", "No mode"],
+    options: ["Bar chart", "Line graph", "Pie chart", "Pictogram only"],
 
-    answer: "4",
+    answer: "Bar chart",
 
-    hint: "Mode is the value that appears most often.",
+    hint: "Think about a graph used to compare separate categories.",
 
     explanation:
-      "4 appears twice while the other values appear once, therefore the mode is 4.",
+      "A bar chart is suitable for comparing frequencies or quantities across different categories such as school subjects.",
   },
 
   {
     id: 8,
 
-    topic: "Range",
+    topic: "Pie Charts",
 
-    question: "What is the range of 5, 9, 12, 15?",
+    question:
+      "A school wants to show how a group of students is divided among different favourite sports. Which representation would be most suitable for showing the parts of the whole?",
 
-    options: ["5", "10", "15", "20"],
+    options: ["Line graph", "Pie chart", "Tally table", "Ordered list"],
 
-    answer: "10",
+    answer: "Pie chart",
 
-    hint: "Range = largest value - smallest value.",
+    hint: "Think about a representation that shows parts of a whole.",
 
-    explanation: "Range = 15 - 5 = 10.",
+    explanation:
+      "A pie chart divides a circle into sectors to show how different categories make up a whole.",
   },
 
   {
     id: 9,
 
-    topic: "Charts",
+    topic: "Line Graphs",
 
-    question: "Which graph is most suitable for showing changes over time?",
+    question:
+      "A school records the number of students attending school each day for one week. Which graph is most suitable for showing changes across the days?",
 
-    options: ["Pie chart", "Line graph", "Bar chart", "Frequency table"],
+    options: ["Pie chart", "Line graph", "Pictogram", "Tally table"],
 
     answer: "Line graph",
 
-    hint: "Think about trends and movement.",
+    hint: "Think about a graph used to show changes and trends.",
 
     explanation:
-      "Line graphs are used to display changes and trends over time.",
+      "A line graph is useful for showing how data changes over an ordered period such as the days of a week.",
   },
 
   {
     id: 10,
 
-    topic: "Data Interpretation",
+    topic: "Choosing Appropriate Representation",
 
     question:
-      "A bar chart shows Mathematics has the highest frequency among subjects. What does this mean?",
+      "A teacher wants to show the number of books read by students in each month of the school term. Which representation would be most appropriate?",
 
-    options: [
-      "Mathematics has the lowest number of students",
-      "Mathematics occurs most frequently",
-      "All subjects have equal frequency",
-      "The chart is incorrect",
-    ],
+    options: ["Line graph", "Pie chart", "Tally marks only", "Pictogram"],
 
-    answer: "Mathematics occurs most frequently",
+    answer: "Line graph",
 
-    hint: "The tallest bar represents the greatest frequency.",
+    hint: "The data is recorded across different months, so think about showing change over time.",
 
-    explanation: "The category with the highest bar has the largest frequency.",
+    explanation:
+      "A line graph is appropriate because the number of books is being recorded across different months, allowing changes and trends over time to be seen clearly.",
   },
 ];
 
